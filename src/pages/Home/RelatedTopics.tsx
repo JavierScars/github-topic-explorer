@@ -55,7 +55,6 @@ export const RelatedTopics: FC<RelatedTopicsProps> = ({
                 key={topic.id}
                 onClick={() => onTopicClick(topic)}
                 data-testid="topic-row-button"
-                aria-role="button"
                 aria-label={`${topic.name} has ${topic.stargazerCount} stars. Click to see related topics.`}
                 tabIndex={0}
               >

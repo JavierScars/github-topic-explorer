@@ -123,7 +123,7 @@ describe("TopicNavigator component", () => {
 
     test("It renders the main topic name and the stargazer count", () => {
       expect(mainTopic.textContent).toEqual(
-        `${mockedProps.topic.name} - ${mockedProps.topic.stargazerCount}`
+        `${mockedProps.topic.name} - ${mockedProps.topic.stargazerCount} `
       );
     });
   });

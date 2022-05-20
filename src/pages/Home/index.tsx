@@ -1,5 +1,5 @@
 import { useQuery } from "@apollo/client";
-import { Box, useToast } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { LoadingSpinner } from "../../components/LoadingSpinner";
 import { SearchBar } from "../../components/SearchBar";
@@ -8,6 +8,7 @@ import { ITopic } from "../../interfaces/Topic";
 import { GET_TOPICS } from "../../queries/Topics";
 import { RelatedTopics } from "./RelatedTopics";
 import { TopicNavigator } from "./TopicNavigator";
+import { useToast } from "../../utils/useToast";
 
 export const Home = () => {
   const [subTopics, setSubTopics] = useState<ITopic[]>([]);
